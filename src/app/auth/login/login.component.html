@@ -7,11 +7,11 @@
     <mat-error *ngIf="emaiInput.invalid">Please enter a vaild email.</mat-error>
    </mat-form-field>
    <mat-form-field>
-    <input type="password" name="pssword" ngModel #passwordInput="ngModel"  matInput placeholder="Password" required>
+    <input type="password" name="password" ngModel #passwordInput="ngModel"  matInput placeholder="Password" required>
     <mat-error *ngIf="passwordInput.invalid">Please enter a valid pssword.</mat-error>
    </mat-form-field>
-   <button mat-raised-button color="accent" type="submit">Login</button>
-</form>
+   <button mat-raised-button color="accent" type="submit" *ngIf="!isLoading">Login</button>
+  </form>
 </mat-card>
 
 

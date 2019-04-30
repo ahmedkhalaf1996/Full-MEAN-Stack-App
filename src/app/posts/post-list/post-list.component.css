@@ -20,6 +20,8 @@ mat-paginator {
 }
 
 .post-image img {
-  width: 100%;
+  /* display: block;   this code here will  centerlize image in postlist page
+  margin: 0 auto; */
+  width:50%;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
